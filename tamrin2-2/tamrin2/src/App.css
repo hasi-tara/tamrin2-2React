@@ -1,0 +1,9 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+}
+
+.color-box {
+  margin: 20px 80px;
+}
