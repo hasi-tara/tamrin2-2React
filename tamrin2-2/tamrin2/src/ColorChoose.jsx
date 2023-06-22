@@ -1,15 +1,13 @@
-import RedOption from "./Red";
-import GreenOption from "./Green";
-import BlueOption from "./Blue";
-import YellowOption from "./Yellow";
+
+import ColorOption from "./Color";
 const ColorChoose = ({ text, value, onChange }) => {
   return (
     <select value={value} onChange={onChange}>
       <option>{text}</option>
-      <RedOption />
-      <GreenOption />
-      <BlueOption />
-      <YellowOption />
+      <ColorOption colorName={'Red'} value={'red'}/>
+      <ColorOption colorName={'Green'} value={'green'}/>
+      <ColorOption colorName={'Blue'} value={'blue'}/>
+      <ColorOption colorName={'Yellow'} value={'yellow'}/>
     </select>
   );
 };
